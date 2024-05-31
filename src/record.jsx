@@ -27,7 +27,10 @@ const Record = () => {
             Name :- <input type="text" />
           </label>
           <label htmlFor="" className='fs-5 fw-bold'>
-            Phone :- <input type="text" />
+            Email :- <input type="email" />
+          </label>
+          <label htmlFor="" className='ms-4 fs-5 fw-bold'>
+            Salary :- <input type="text" />
           </label>
         </form>
         <button className='ms-5 btn btn-secondary' onClick={() => addMore()}>Add</button>
@@ -43,11 +46,14 @@ const Record = () => {
                 <label htmlFor="" className='me-4 fs-5 fw-bold'>
                   Name :- <input type="text" />
                 </label>
-                <label htmlFor="" className='me-4 fs-5 fw-bold'>
-                  Phone :- <input type="text" />
+                <label htmlFor="" className='fs-5 fw-bold'>
+                  Email :- <input type="email" />
+                </label>
+                <label htmlFor="" className='ms-4 fs-5 fw-bold'>
+                  Salary :- <input type="text" />
                 </label>
               </form>
-              <button className='ms-2 btn btn-danger' onClick={() => deleteI(item.id)}>Delete</button>
+              <button className='ms-4 btn btn-danger' onClick={() => deleteI(item.id)}>Delete</button>
             </div>
           )
         })
